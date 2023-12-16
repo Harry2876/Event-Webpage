@@ -507,6 +507,7 @@ h6 {
   width: 100%;
   height: 100vh;
   margin-top: 45px;
+  margin-bottom: -50px;
   background-size: cover;
   position: relative;
 }
@@ -531,7 +532,7 @@ h6 {
   font-size: 170px;
   font-weight: 700;
   line-height: 56px;
-  color: #222222;
+  color: #000000;
   font-family: Samarkan;
   margin-left: -150px;
   margin-bottom: 135px;
@@ -565,14 +566,6 @@ h6 {
   color:rgba(206, 164, 55, 1);
   }
 
-  .countdown-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 #countdown {
   font-size: 3.7em;
@@ -580,7 +573,7 @@ h6 {
   font-family:  'Fugaz One';
   color: rgba(206, 164, 55, 1);
   margin-top: -20px;
-  margin-left: -485px;
+  margin-left:-150px;
 }
 
 #hero .btn-get-started {
@@ -862,6 +855,11 @@ section {
 
 }
 
+.about h2 {
+  color: rgb(233, 187, 72);
+}
+
+
 .about .section-title span {
 
   font-family: samarkan;
@@ -881,6 +879,16 @@ section {
 
 .about .img-fluid:hover{
 transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about .img-fluid {
+  border-radius: 30px;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.25);
+  padding-right: 10px;
+  margin-left: 5px;
+  transition: transform 0.2s ease-in-out;
+  }
 }
 
 .about .card {
@@ -918,12 +926,12 @@ transform: scale(1.05);
 .about .card h2 {
   margin-left: 110px;
   margin-top: -100px;
-  letter-spacing: 1px;
   margin-bottom: 5px;
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: Righteous;
+  font-family: 'Open Sans';
+  font-weight: 800;
   color: #000;
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -936,7 +944,8 @@ margin-left: 100px;
 margin-top: 0px;
 padding-bottom: 10px;
 font-size: 24px;
-font-family: 'Roboto Slab';
+font-family: sans-serif;
+font-weight: 500;
 color: #000;
 text-align: left;
 }
@@ -1058,12 +1067,12 @@ text-align: left;
 .about .card2 h2 {
   margin-left: 110px;
   margin-top: -100px;
-  letter-spacing: 1px;
   margin-bottom: 5px;
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: Righteous;
+  font-family: 'Open Sans';
+  font-weight: 800;
   color: #000;
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1076,7 +1085,8 @@ text-align: left;
   margin-top: 0px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: 'Roboto Slab';
+  font-family: sans-serif;
+  font-weight: 500;
   color: #000;
   text-align: left;
 }
@@ -1155,12 +1165,12 @@ text-align: left;
 .about .card3 h2 {
   margin-left: 110px;
   margin-top: -125px;
-  letter-spacing: 1px;
   margin-bottom: 5px;
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: Righteous;
+  font-family: 'Open Sans';
+  font-weight: 800;
   color: #000;
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1173,7 +1183,8 @@ text-align: left;
   margin-top: 0px;
   padding-bottom: 10px;
   font-size: 24px;
-  font-family: 'Roboto Slab';
+  font-family: sans-serif;
+  font-weight: 500;
   color: #000;
   text-align: left;
 }
@@ -1262,32 +1273,67 @@ text-align: left;
 }
 
 .counts .count-box {
+  margin-top: -50px;
   padding: 30px 30px 25px 30px;
   width: 100%;
+  margin-bottom: 30px;
   position: relative;
   text-align: center;
-  background: #f1f6fe;
+  border-radius: 30px;
+  background: #f0f1d3;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-in-out;
+}
+
+.counts .count-box:hover {
+  transform: scale(1.05); /* Zoom in by 5% on hover */
 }
 
 .counts .count-box i {
   position: absolute;
-  top: -28px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #106eea;
-  color: #fff;
-  width: 56px;
-  height: 56px;
+  width: 65px;
+  height: 65px;
   line-height: 0;
-  border-radius: 50px;
-  border: 5px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.counts .count-box .days{
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  width: 80px;
+  height: 80px;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counts .count-box .hour{
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  width: 80px;
+  height: 80px;
+  line-height: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .counts .count-box span {
+  margin-top: 45px;
   font-size: 36px;
   display: block;
   font-weight: 600;
@@ -1297,6 +1343,8 @@ text-align: left;
 .counts .count-box p {
   padding: 0;
   margin: 0;
+  margin-top: 5px;
+  font-weight: 900;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -1329,6 +1377,24 @@ text-align: left;
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+
+.services .section-title h2 {
+
+  color: rgb(233, 187, 72);;
+}
+
+.services .section-title h3 {
+  font-family: 'Open Sans';
+  color: #000;
+}
+
+.services .section-title span {
+
+  color: rgb(233, 187, 72);;
+}
+
+
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -1493,6 +1559,23 @@ text-align: left;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.portfolio .section-title h2{
+  color: rgb(233, 187, 72);
+}
+
+.portfolio .section-title h3{
+  font-family: 'Open Sans';
+  color: #000;
+}
+
+.portfolio .section-title span{
+  color:  rgb(233, 187, 72);
+}
+
+
+
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1923,6 +2006,20 @@ text-align: left;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact .section-title h2{
+color: rgba(206, 164, 55, 1);
+}
+
+.contact .section-title span {
+  color: rgba(206, 164, 55, 1);
+}
+
+.contact .contact-form i
+{
+  height: 10px;
+  width: 10px;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1952,9 +2049,13 @@ text-align: left;
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .contact-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+  border-radius: 30px;
   padding: 30px;
+  margin-left: 40px;
+  width: 600px;
+  height: 380px;
 }
 
 .contact .php-email-form .error-message {
