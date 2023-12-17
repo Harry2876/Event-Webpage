@@ -5,7 +5,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -32,7 +31,6 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -52,7 +50,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
+  border: 6px solid  rgba(206, 164, 55, 1);
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -178,7 +176,7 @@ h6 {
   width: 4.5%;
   height: 47px;
   margin-right: auto;
-  margin-left: -180px;
+  margin-left: -70px;
   margin-top: 0px;
   margin-bottom: 5px;
   position: relative;
@@ -190,12 +188,12 @@ h6 {
   font-size: 20px;
   margin: 0;
   padding: 0;
-  margin-right: 700px;
+  margin-right: 490px;
   margin-left: auto;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.8px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 
@@ -215,6 +213,30 @@ h6 {
   margin-top: 70px;
 }
 
+@media (max-width: 768px) {
+  #header .government-engineering-college-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    }
+
+    #header .logo {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+      margin-left: 5px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      font-family: "Lato", sans-serif;
+    }
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -230,7 +252,7 @@ h6 {
   padding: 0;
   display: flex;
   margin-left: auto;
-  margin-right: -220px;
+  margin-right: -80px;
   list-style: none;
   align-items: center;
 }
@@ -366,6 +388,9 @@ h6 {
   font-size: 28px;
   cursor: pointer;
   display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
   line-height: 0;
   transition: 0.5s;
 }
@@ -409,8 +434,9 @@ h6 {
   right: 15px;
   bottom: 15px;
   left: 15px;
+  border-radius: 20px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #d6e8f6;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -526,7 +552,6 @@ h6 {
   position: relative;
 }
 
-
 #hero h1 {
   margin: 0;
   font-size: 170px;
@@ -534,9 +559,9 @@ h6 {
   line-height: 56px;
   color: #000000;
   font-family: Samarkan;
-  margin-left: -150px;
+  margin-left: 0px;
   margin-bottom: 135px;
-  margin-top: 220px;
+  margin-top: 100px;
 }
 
 #hero h1 span {
@@ -547,17 +572,17 @@ h6 {
   color:rgba(206, 164, 55, 1);
   margin: -10px 0 30px 0;
   font-size: 32px;
-  margin-bottom: 210px;
+  margin-bottom: 150px;
   font-weight: 400;
   font-family: 'Yatra One';
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: -150px;
+  margin-left: 0px;
 }
 
 #hero h3 {
   margin: -10px 0 30px 0;
-  margin-left: -150px;
+  margin-left: 0px;
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 95px;
@@ -573,7 +598,7 @@ h6 {
   font-family:  'Fugaz One';
   color: rgba(206, 164, 55, 1);
   margin-top: -20px;
-  margin-left:-150px;
+  margin-left:0px;
 }
 
 #hero .btn-get-started {
@@ -632,15 +657,36 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 100px;
     line-height: 36px;
   }
 
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #countdown {
+    font-size: 2.0em;
+    margin-bottom: 50px;
+    font-family:  'Fugaz One';
+    color: rgba(206, 164, 55, 1);
+    margin-top: 20px;
+    margin-left:0px;
   }
+
+  #hero h2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: -20px;
+    margin-bottom: 150px;
+  }
+
+  #hero h3 {
+    margin: -10px 0 30px 0;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: Courgette;
+    color:rgba(206, 164, 55, 1);
+    }
 
   #hero .btn-get-started,
   #hero .btn-watch-video {
