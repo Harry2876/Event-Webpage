@@ -1445,6 +1445,7 @@ text-align: left;
   text-align: center;
   border: 1px solid rgb(233, 187, 72);
   border-radius: 20px;
+  margin-bottom: 10px;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
@@ -1486,17 +1487,17 @@ text-align: left;
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   margin-top: 35px;
   font-family: 'Roboto',sans-serif;
 }
 
 .services .pill-button{
-
   display: inline-block;
   padding: 10px 20px;
   margin-top: 40px;
-  margin-bottom: -50px;
+  margin: 15px;
+  margin-bottom: -30px;
   border-radius: 30px; /* Adjust the border-radius to control the pill shape */
   background-color: rgb(233, 187, 72); /* Button background color */
   color: #fff; /* Button text color */
@@ -1504,6 +1505,49 @@ text-align: left;
   font-weight: bold;
   transition: transform 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+
+  .more-button{
+    margin-left: -460px;
+  }
+  .more-box {
+    display: inline-block;
+    padding: 5px 50px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: 0px;
+    border-radius: 30px; /* Adjust the border-radius to control the pill shape */
+    background-color: rgb(233, 187, 72); /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.more-button {
+  margin-left: 290px;
+}
+
+.more-box {
+  display: inline-block;
+  padding: 4px 60px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  margin-left: 570px;
+  border-radius: 30px; /* Adjust the border-radius to control the pill shape */
+  background-color: rgb(233, 187, 72); /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.more-box:hover{
+  transform: scale(1.1);
+}
+
 
 .pill-button:hover {
   transform: scale(1.1); /* Adjust the background color on hover */
