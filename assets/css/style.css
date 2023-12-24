@@ -976,11 +976,10 @@ transform: scale(1.05);
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   font-weight: 800;
   color: #000;
   text-align: left;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about .card p {
@@ -1117,11 +1116,10 @@ text-align: left;
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   font-weight: 800;
   color: #000;
   text-align: left;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about .card2 p {
@@ -1215,11 +1213,10 @@ text-align: left;
   line-height: normal;
   position: relative;
   font-size: 25px;
-  font-family: 'Open Sans';
+  font-family: 'Roboto';
   font-weight: 800;
   color: #000;
   text-align: left;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about .card3 p {
@@ -1530,7 +1527,7 @@ text-align: left;
     padding: 4px 60px;
     margin-top: 0px;
     margin-bottom: -50px;
-    margin-left: 120px;
+    margin-left: 110px;
     border-radius: 30px; /* Adjust the border-radius to control the pill shape */
     background-color: rgb(233, 187, 72); /* Button background color */
     color: #fff; /* Button text color */
@@ -2237,7 +2234,7 @@ color: rgba(206, 164, 55, 1);
   padding: 30px;
   margin-left: 40px;
   width: 600px;
-  height: 380px;  
+  height: 380px;
 }
 
 .contact .contact-form h2 {
@@ -2247,7 +2244,7 @@ color: rgba(206, 164, 55, 1);
   padding-left: 10px;
   margin-left: 170px;
   padding-bottom: 15px;
-  margin-top: -285px;
+  margin-top: -265px;
 }
 
 .contact .contact-form h5 {
@@ -2271,7 +2268,7 @@ color: rgba(206, 164, 55, 1);
   padding-left: 10px;
   margin-left: 170px;
   padding-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 @media (max-width:768px) {
@@ -2281,7 +2278,7 @@ color: rgba(206, 164, 55, 1);
     border-radius: 30px;
     padding: 30px;
     margin-left: 20px;
-    width: 380px;
+    width: 350px;
     height: 440px;  
   }
   
@@ -2290,19 +2287,20 @@ color: rgba(206, 164, 55, 1);
     font-size: 15px;
     font-weight: 800;
     padding-left: 10px;
-    margin-left: 170px;
+    margin-left: 100px;
     padding-bottom: 15px;
-    margin-top: -285px;
+    margin-top: -315px;
   }
   
   .contact .contact-form h5 {
     font-family: 'Roboto',sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     padding-left: 10px;
-    margin-left: 170px;
+    margin-left: 100px;
     padding-bottom: 10px;
     margin-top: 10px;
+
   }
   
   .contact .contact-form span {
@@ -2314,14 +2312,38 @@ color: rgba(206, 164, 55, 1);
     font-size: 15px;
     font-weight: 800;
     padding-left: 10px;
-    margin-left: 170px;
+    margin-left: 100px;
     padding-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
+  .contact .icon{
+    margin: 0;
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
 
-
-
+  .contact .road{
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 10px;
+    margin-top: 100px;
+  }
 
 }
 
@@ -2542,7 +2564,7 @@ color: rgba(206, 164, 55, 1);
 .buttons button{
   background: #ecf0f3;
   box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+              3px 3px 5px #ceced1;
 }
 .wrapper{
   position: relative;
@@ -2659,19 +2681,6 @@ color: rgba(206, 164, 55, 1);
   border-radius: 50%;
 }
 
-
-.social-icons .telegram{
-  width: 26px;
-  height: 26px;
-}
-
-
-.social-icons .instagram {
-  width: 28px;
-  height: 28px;
-  position: relative;
-}
-
 .social-icons a.git i{
   color: #000000;
 }
@@ -2682,6 +2691,9 @@ color: rgba(206, 164, 55, 1);
 
 @media (max-width: 768px) {
 
+  #footer {
+    margin-top: -50px;
+  }
   #footer .copyright {
     float: none;
     text-align: center;
@@ -2718,7 +2730,7 @@ color: rgba(206, 164, 55, 1);
 
   .wrapper{
     position: relative;
-    width: 380px;
+    width: 360px;
     height: 270px;
     padding: 30px;
     padding-left: 10px;
@@ -2735,7 +2747,7 @@ color: rgba(206, 164, 55, 1);
     height: 150px;
     width: 150px;
     margin-right: 180px;
-    margin-top: 80px;
+    margin-top: 140px;
     margin-bottom: -95px;
     border-radius: 50%;
     display: flex;
@@ -2761,7 +2773,8 @@ color: rgba(206, 164, 55, 1);
     font-size: 15px;
     font-weight: 800;
     color: rgba(206, 164, 55, 1);
-    margin: -100px 170px 0 -40px;
+    margin: -90px 170px 0 -40px;
+    padding-bottom: 10px;
     margin-bottom: 30px;
     text-align: start;
   }
@@ -2771,7 +2784,7 @@ color: rgba(206, 164, 55, 1);
     font-weight: 800;
     font-family: 'Lato';
     color: #31344b;
-    margin: -40px 0 5px 190px;
+    margin: -40px 0 5px 170px;
   }
   .wrapper .about{
     color: #44476a;
@@ -2786,7 +2799,7 @@ color: rgba(206, 164, 55, 1);
     font-weight: 500;
     font-size: 12px;
     margin-top: 5px;
-    margin-left:190px;
+    margin-left:170px;
     font-family: 'Roboto',sans-serif;
   }
   .wrapper .branch{
@@ -2794,33 +2807,20 @@ color: rgba(206, 164, 55, 1);
     font-weight: 500;
     font-size: 12px;
     margin-top: 8px;
-    margin-left:190px;
+    margin-left:170px;
     font-family: 'Roboto',sans-serif;
   }
   .wrapper .social-icons{
-    margin: 35px 0 -20px 170px;
+    margin: 35px 0 30px 160px;
     padding-bottom: 20px;
   }
   .social-icons a{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 0 6px;
+    margin-bottom: 40px;
     display: inline-flex;
     text-decoration: none;
     border-radius: 50%;
   }
-  
-  
-  .social-icons .telegram{
-    width: 26px;
-    height: 26px;
-  }
-  
-  
-  .social-icons .instagram {
-    width: 28px;
-    height: 28px;
-    position: relative;
-  }
-
 }
