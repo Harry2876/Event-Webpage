@@ -283,6 +283,12 @@
 
   });
 
+function onPlayerReady(event) {
+    // You can do additional actions when the player is ready
+    // For example, you can pause the video initially
+    event.target.pauseVideo();
+}
+
   /**
    * Initiate portfolio lightbox 
    */
