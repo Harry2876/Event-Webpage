@@ -2237,6 +2237,35 @@ color: rgba(206, 164, 55, 1);
   height: 380px;
 }
 
+.contact .icon{
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.contact .road{
+  margin: 0;
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 10px;
+  margin-top: 70px;
+}
+
+
 .contact .contact-form h2 {
   font-family: 'Open Sans';
   font-size: 18px;
@@ -2244,7 +2273,7 @@ color: rgba(206, 164, 55, 1);
   padding-left: 10px;
   margin-left: 170px;
   padding-bottom: 15px;
-  margin-top: -265px;
+  margin-top: -335px;
 }
 
 .contact .contact-form h5 {
