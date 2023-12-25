@@ -39,9 +39,9 @@
     width: 99%;
     border-radius: 50px;
     margin-top: -30px;
-    background-color:rgba(185, 233, 72, 0.226);/* Header background color */
+    background-color:#d8f3dc;/* Header background color */
     color: #fff; /* Header text color */
-    padding: 15px;
+    padding: 13px;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     padding: 20px;
-    margin-top: 300px;
+    margin-top: 235px;
 }
 
 .services .card-container {
