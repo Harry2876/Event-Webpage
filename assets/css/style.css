@@ -2295,10 +2295,10 @@ color: rgba(206, 164, 55, 1);
   }
 
   .wrapper .img-area{
-    height: 150px;
-    width: 150px;
-    margin-right: 180px;
-    margin-top: 140px;
+    height: 160px;
+    width: 160px;
+    margin-right: 160px;
+    margin-top: 130px;
     margin-bottom: -95px;
     border-radius: 50%;
     display: flex;
@@ -2350,7 +2350,7 @@ color: rgba(206, 164, 55, 1);
     font-weight: 500;
     font-size: 12px;
     margin-top: 5px;
-    margin-left:170px;
+    margin-left:190px;
     font-family: 'Roboto',sans-serif;
   }
   .wrapper .branch{
