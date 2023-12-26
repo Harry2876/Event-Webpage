@@ -897,7 +897,6 @@ section {
 .about .img-fluid {
   border-radius: 30px;
   box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.25);
-  padding-right: 10px;
   margin-left: -20px;
   transition: transform 0.2s ease-in-out;
 }
@@ -1607,6 +1606,7 @@ text-align: left;
   opacity: 1;
   bottom: 20px;
 }
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -2121,9 +2121,10 @@ color: rgba(206, 164, 55, 1);
   position: relative;
   width: 450px;
   padding: 30px;
+  background: rgba(105, 13, 197, 0.103);
   padding-left: 10px;
   margin-left: 800px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: -270px;
   display: flex;
   align-items: center;
@@ -2193,7 +2194,7 @@ color: rgba(206, 164, 55, 1);
   font-size: 23px;
   font-weight: 800;
   font-family: 'Lato';
-  color: #31344b;
+  color: rgba(206, 164, 55, 1);
   margin: 0px 0 5px 150px;
 }
 .wrapper .about{
@@ -2223,6 +2224,7 @@ color: rgba(206, 164, 55, 1);
   margin: 35px 0 -20px 170px;
   padding-bottom: 20px;
 }
+
 .social-icons a{
   height: 40px;
   width: 40px;

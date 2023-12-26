@@ -195,9 +195,18 @@
     }, 1000);
 });
 
+/**For image slider */
+function rotate() {
+  var lastChild = $('.slider div:last-child').clone();
+  $('.slider div').removeClass('.firstSlide')
+  $('.slider div:last-child').remove();
+  $('.slider').append(lastChild);
+  $(lastChild).addClass('firstSlide');
+}
 
-
-
+window.setInterval(function(){
+  rotate()
+},4000);
 
 
 
