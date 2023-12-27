@@ -253,18 +253,6 @@ const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryCont
 exampleCarousel.setControls();
 exampleCarousel.useControls();
 
-
-  /**
-   * Preloader
-   */
-document.addEventListener("DOMContentLoaded", function() {
-  // Simulate content loading
-  setTimeout(function() {
-    document.getElementById('preloader-overlay').classList.add('loaded');
-  }, 3000); // 4 seconds
-});
-
- 
   /**
    * Initiate glightbox
    */
