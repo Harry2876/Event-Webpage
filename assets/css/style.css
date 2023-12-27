@@ -1451,7 +1451,7 @@ text-align: left;
     padding: 4px 60px;
     margin-top: 0px;
     margin-bottom: -50px;
-    margin-left: 110px;
+    margin-left: 115px;
     border-radius: 30px; /* Adjust the border-radius to control the pill shape */
     background-color: rgb(233, 187, 72); /* Button background color */
     color: #fff; /* Button text color */
@@ -1533,85 +1533,256 @@ text-align: left;
   margin-right: 0;
 }
 
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
 
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  color: #222222;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: #555555;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #3c3c3c;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #106eea;
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
-.portfolio .portfolio-item .portfolio-links {
-  opacity: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a:hover {
-  color: #6ba7f5;
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 20px;
-}
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.portfolio .gallery {
+  width: 100%;
+}
+
+.portfolio .gallery-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.portfolio .gallery-item {
+  height: 250px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 380px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+}
+
+.portfolio .gallery-item-1 {
+  left:25%;
+  opacity: .4;
+  transform: translateX(-50%);
+}
+
+.portfolio .gallery-item-2, .gallery-item-4 {
+  height: 250px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+}
+
+.portfolio .gallery-item-2{
+  left: 35%;
+  transform: translateX(-50%);
+}
+
+.portfolio .gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  z-index: 2;
+}
+
+.portfolio .gallery-item-4 {
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.portfolio .gallery-item-5{
+  left:70%;
+  opacity: 1.2;
+  transform: translateX(-50%);
+}
+
+.portfolio .gallery-item-6 {
+  left: 70%;
+  opacity: .4;
+}
+
+.portfolio .gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+.portfolio .gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding:
+  12px;
+  text-transform: capitalize;
+}
+
+.portfolio .gallery-controls-button:focus {
+  outline: none;
+  }
+
+  .portfolio .gallery-controls-previous {
+  position: relative;
+  }
 
 
+  .portfolio .gallery-controls-next {
+    position: relative;
+  }
+
+
+
+.portfolio .gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.portfolio .gallery-nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.portfolio .gallery-nav li.gallery-item-selected {
+  background: #555;
+}
+
+
+@media (max-width: 768px) {
+
+  .portfolio .gallery-container {
+      align-items: center;
+      display: flex;
+      height: 390px;
+      width: 370px;
+      margin: 0 auto;
+      max-width: 1000px;
+    scroll-snap-type: x mandatory; /* Enable snapping to items */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  }
+  
+  .portfolio .gallery-item {
+    scroll-snap-align: start; /* Align items during scrolling */
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    margin-right: 10px; /* Add margin between items */
+  }
+  
+  .portfolio .gallery-item-1 {
+    left:5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+    transform: translateX(-50%);
+  }
+  
+  .portfolio .gallery-item-2, .gallery-item-4 {
+    height: 290px;
+    opacity: 0.8;
+    width: 390px;
+    z-index: 1;
+  }
+  
+  .portfolio .gallery-item-2{
+    left: 35%;
+    transform: translateX(-50%);
+  }
+  
+  .portfolio .gallery-item-3 {
+    height: 290px;
+    opacity: 1;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 390px;
+    z-index: 2;
+  }
+  
+  .portfolio .gallery-item-4 {
+    left: 10%;
+    transform: translateX(-50%);
+  }
+  
+  .portfolio .gallery-item-5{
+    left:10%;
+    opacity: 1.2;
+    transform: translateX(-50%);
+    width: 390px;
+    height: 290px;
+  }
+  
+  .portfolio .gallery-item-6 {
+    left: -5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+  }
+  .portfolio .gallery-item-7 {
+    left: -5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+  }
+  .portfolio .gallery-item-8 {
+    left: -5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+  }
+  .portfolio .gallery-item-9 {
+    left: -5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+  }
+  .portfolio .gallery-item-10 {
+    left: -5%;
+    opacity: .4;
+    width: 390px;
+    height: 290px;
+  }
+
+
+
+  .portfolio .gallery-controls {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+    margin: 25px 0;
+  }
+  
+  .portfolio .gallery-controls button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px;
+    text-transform: capitalize;
+  }
+  
+  .portfolio .gallery-nav {
+    display: none; /* Hide navigation dots on small screens */
+  }
+  
+  @media (min-width: 769px) {
+    .portfolio .gallery-controls button {
+      margin: 0 50px;
+    }
+  
+    .portfolio .gallery-nav {
+      display: flex; /* Display navigation dots on larger screens */
+    }
+  }
+}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -1629,6 +1800,12 @@ text-align: left;
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+#contact {
+  margin-top: -80px;
+}
+
+
 
 .contact .section-title h2{
 color: rgba(206, 164, 55, 1);
@@ -1823,6 +2000,10 @@ color: rgba(206, 164, 55, 1);
 }
 
 @media (max-width:768px) {
+
+  #contact {
+    margin-top: -70px;
+  }
 
   .contact .contact-form {
     box-shadow: -8px 8px 30px rgba(164, 161, 161, 0.25);
@@ -2287,7 +2468,7 @@ color: rgba(206, 164, 55, 1);
     height: 270px;
     padding: 30px;
     padding-left: 10px;
-    margin-left:00px;
+    margin-left:10px;
     border-radius: 10px;
     margin-top: -270px;
     display: flex;
