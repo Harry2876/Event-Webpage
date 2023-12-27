@@ -1360,6 +1360,23 @@ text-align: left;
   color: rgb(233, 187, 72);;
 }
 
+.services .blinking-text {
+  color: #000;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: black;
+  }
+  50% {
+    color:rgb(233, 187, 72);
+  }
+  100% {
+    color:black;
+  }
+}
+
 
 
 .services .icon-box {

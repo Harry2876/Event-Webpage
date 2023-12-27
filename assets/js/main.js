@@ -264,6 +264,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 4000); // 4 seconds
 });
 
+ 
   /**
    * Initiate glightbox
    */
